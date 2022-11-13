@@ -27,11 +27,7 @@
     <div id="container">
         <div id="map"></div>
     </div>
-    
-    <button onclick="getLocation()">Get location</button>
-
-    <p id="demo"></p>
-    
+        
 
     <script>
 // Note: This example requires that you consent to location sharing when
@@ -45,6 +41,28 @@
             center: { lat: 37.3541, lng: -121.9552 },
             zoom: 13,
         });
+
+
+
+        new google.maps.Marker({
+        position: {lat: 37.3541, lng: -121.9552},
+        map,
+        title: "Hello World!",
+        });
+
+        new google.maps.Marker({
+        position: {lat: 37.4541, lng: -121.9552},
+        map,
+        title: "Hello World!",
+        });        
+        
+        new google.maps.Marker({
+        position: {lat: 37.6541, lng: -121.9552},
+        map,
+        title: "Hello World!",
+        });
+
+
 
         infoWindow = new google.maps.InfoWindow();
 
